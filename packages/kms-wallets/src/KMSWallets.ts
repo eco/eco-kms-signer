@@ -2,7 +2,7 @@ import {
   ECDSASignature,
   Wallets,
   KMSProvider,
-} from '@eco-foundation/eco-kms-signer-core'
+} from '@eco-foundation/eco-kms-core'
 import { UPublickeyKMS } from './Utils/UPublickeyKMS'
 import { USignatureECDSA } from './Utils/USignatureECDSA'
 

@@ -9,5 +9,5 @@ export default defineConfig({
   clean: true,
   target: 'es2022',
   outDir: 'dist',
-  external: ['@eco-foundation/eco-kms-signer-core', '@aws-sdk/client-kms'],
+  external: ['@eco-foundation/eco-kms-core', '@aws-sdk/client-kms'],
 })

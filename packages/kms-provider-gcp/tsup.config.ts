@@ -10,7 +10,7 @@ export default defineConfig({
   target: 'es2022',
   outDir: 'dist',
   external: [
-    '@eco-foundation/eco-kms-signer-core',
+    '@eco-foundation/eco-kms-core',
     '@google-cloud/kms',
     'fast-crc32c',
     'uuid',

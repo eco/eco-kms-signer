@@ -1,13 +1,13 @@
 {
-  "name": "@eco-foundation/eco-kms-signer",
+  "name": "@eco-foundation/eco-kms",
   "version": "0.0.1",
   "private": true,
-  "description": "Modern Eco KMS Signer Library",
+  "description": "Modern Eco KMS Library",
   "license": "MIT",
   "author": "Eco Engineering <eng@eco.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eco/eco-kms-signer.git"
+    "url": "https://github.com/eco/eco-kms.git"
   },
   "engines": {
     "node": ">=18.0.0",

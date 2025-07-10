@@ -1,7 +1,7 @@
 {
-  "name": "@eco-foundation/eco-kms-signer-kms-provider-aws",
+  "name": "@eco-foundation/eco-kms-provider-aws",
   "version": "2.0.0",
-  "description": "AWS KMS Provider for Eco KMS Signer (Based on web3-kms-signer by Jonathan Okz)",
+  "description": "AWS KMS Provider for Eco KMS (Based on web3-kms-signer by Jonathan Okz)",
   "keywords": [
     "ethereum",
     "utilities",
@@ -16,7 +16,7 @@
   "author": "Eco Engineering <eng@eco.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eco/eco-kms-signer.git"
+    "url": "https://github.com/eco/eco-kms.git"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -38,7 +38,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@eco-foundation/eco-kms-signer-core": "workspace:*",
+    "@eco-foundation/eco-kms-core": "workspace:*",
     "@aws-sdk/client-kms": "^3.490.0"
   },
   "devDependencies": {

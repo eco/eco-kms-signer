@@ -1,7 +1,7 @@
 {
-  "name": "@eco-foundation/eco-kms-signer-core",
+  "name": "@eco-foundation/eco-kms-core",
   "version": "2.0.0",
-  "description": "Core library for Eco KMS Signer - Sign Ethereum transactions and messages using KMS and HD wallets (Based on web3-kms-signer by Jonathan Okz)",
+  "description": "Core library for Eco KMS - Sign Ethereum transactions and messages using KMS and HD wallets (Based on web3-kms-signer by Jonathan Okz)",
   "keywords": [
     "ethereum",
     "utilities",
@@ -14,7 +14,7 @@
   "author": "Eco Engineering <eng@eco.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eco/eco-kms-signer.git"
+    "url": "https://github.com/eco/eco-kms.git"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

@@ -4,7 +4,7 @@ import {
   UPublickey,
   Wallets,
   ECDSASignature,
-} from '@eco-foundation/eco-kms-signer-core'
+} from '@eco-foundation/eco-kms-core'
 
 /**
  * The HDWallets class extends the abstract Wallets class, providing a concrete implementation

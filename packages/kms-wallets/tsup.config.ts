@@ -9,5 +9,5 @@ export default defineConfig({
   clean: true,
   target: 'es2022',
   outDir: 'dist',
-  external: ['@eco-foundation/eco-kms-signer-core', 'asn1js', 'bn.js'],
+  external: ['@eco-foundation/eco-kms-core', 'asn1js', 'bn.js'],
 })

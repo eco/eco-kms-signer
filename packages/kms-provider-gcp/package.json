@@ -1,7 +1,7 @@
 {
-  "name": "@eco-foundation/eco-kms-signer-kms-provider-gcp",
+  "name": "@eco-foundation/eco-kms-provider-gcp",
   "version": "2.0.0",
-  "description": "GCP KMS Provider for Eco KMS Signer (Based on web3-kms-signer by Jonathan Okz)",
+  "description": "GCP KMS Provider for Eco KMS (Based on web3-kms-signer by Jonathan Okz)",
   "keywords": [
     "ethereum",
     "utilities",
@@ -17,7 +17,7 @@
   "author": "Eco Engineering <eng@eco.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eco/eco-kms-signer.git"
+    "url": "https://github.com/eco/eco-kms.git"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -39,7 +39,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@eco-foundation/eco-kms-signer-core": "workspace:*",
+    "@eco-foundation/eco-kms-core": "workspace:*",
     "@google-cloud/kms": "^4.2.0",
     "fast-crc32c": "^2.0.0",
     "uuid": "^9.0.1"

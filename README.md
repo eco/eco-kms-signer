@@ -1,4 +1,4 @@
-# Eco KMS Signer
+# Eco KMS
 
 Modern TypeScript library for signing Ethereum transactions using KMS providers (AWS/GCP) and HD wallets.
 
@@ -10,16 +10,16 @@ Modern TypeScript library for signing Ethereum transactions using KMS providers 
 
 ```bash
 # Choose your wallet type
-npm install @eco-foundation/eco-kms-signer-core @eco-foundation/eco-kms-signer-hd-wallets
+npm install @eco-foundation/eco-kms-core @eco-foundation/eco-kms-hd-wallets
 # OR
-npm install @eco-foundation/eco-kms-signer-core @eco-foundation/eco-kms-signer-kms-wallets @eco-foundation/eco-kms-signer-kms-provider-aws
+npm install @eco-foundation/eco-kms-core @eco-foundation/eco-kms-wallets @eco-foundation/eco-kms-provider-aws
 ```
 
 ### HD Wallets
 
 ```typescript
-import { Signer } from '@eco-foundation/eco-kms-signer-core'
-import { HDWallets } from '@eco-foundation/eco-kms-signer-hd-wallets'
+import { Signer } from '@eco-foundation/eco-kms-core'
+import { HDWallets } from '@eco-foundation/eco-kms-hd-wallets'
 
 const signer = new Signer(new HDWallets('your mnemonic phrase'), 1)
 
@@ -37,9 +37,9 @@ const signedTx = await signer.signTransaction(
 ### AWS KMS
 
 ```typescript
-import { Signer } from '@eco-foundation/eco-kms-signer-core'
-import { KMSWallets } from '@eco-foundation/eco-kms-signer-kms-wallets'
-import { KMSProviderAWS } from '@eco-foundation/eco-kms-signer-kms-provider-aws'
+import { Signer } from '@eco-foundation/eco-kms-core'
+import { KMSWallets } from '@eco-foundation/eco-kms-wallets'
+import { KMSProviderAWS } from '@eco-foundation/eco-kms-provider-aws'
 
 const provider = new KMSProviderAWS({
   region: 'us-east-1',
@@ -55,9 +55,9 @@ const signedTx = await signer.signTransaction({ keyId }, txData)
 ### GCP KMS
 
 ```typescript
-import { Signer } from '@eco-foundation/eco-kms-signer-core'
-import { KMSWallets } from '@eco-foundation/eco-kms-signer-kms-wallets'
-import { KMSProviderGCP } from '@eco-foundation/eco-kms-signer-kms-provider-gcp'
+import { Signer } from '@eco-foundation/eco-kms-core'
+import { KMSWallets } from '@eco-foundation/eco-kms-wallets'
+import { KMSProviderGCP } from '@eco-foundation/eco-kms-provider-gcp'
 
 const provider = new KMSProviderGCP({ keyFilename: 'service-account.json' })
 provider.setPath({
@@ -96,11 +96,11 @@ wallets.getAddress(keyId) → Promise<Buffer>
 
 | Package                                           | Description                |
 | ------------------------------------------------- | -------------------------- |
-| `@eco-foundation/eco-kms-signer-core`             | Core signing functionality |
-| `@eco-foundation/eco-kms-signer-hd-wallets`       | HD wallet support          |
-| `@eco-foundation/eco-kms-signer-kms-wallets`      | KMS wallet support         |
-| `@eco-foundation/eco-kms-signer-kms-provider-aws` | AWS KMS provider           |
-| `@eco-foundation/eco-kms-signer-kms-provider-gcp` | GCP KMS provider           |
+| `@eco-foundation/eco-kms-core`             | Core signing functionality |
+| `@eco-foundation/eco-kms-hd-wallets`       | HD wallet support          |
+| `@eco-foundation/eco-kms-wallets`      | KMS wallet support         |
+| `@eco-foundation/eco-kms-provider-aws` | AWS KMS provider           |
+| `@eco-foundation/eco-kms-provider-gcp` | GCP KMS provider           |
 
 ## Development
 
