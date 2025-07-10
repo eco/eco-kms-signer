@@ -1,0 +1,51 @@
+{
+  "name": "@eco-foundation/eco-kms-signer-core",
+  "version": "2.0.0",
+  "description": "Core library for Eco KMS Signer - Sign Ethereum transactions and messages using KMS and HD wallets (Based on web3-kms-signer by Jonathan Okz)",
+  "keywords": [
+    "ethereum",
+    "utilities",
+    "kms",
+    "signer",
+    "web3",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Eco Engineering <eng@eco.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eco/eco-kms-signer.git"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ethereumjs/common": "^4.2.0",
+    "@ethereumjs/tx": "^5.2.0",
+    "@ethereumjs/util": "^9.0.2",
+    "ethers": "^6.10.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

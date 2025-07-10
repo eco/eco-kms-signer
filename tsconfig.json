@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/hd-wallets" },
+    { "path": "./packages/kms-wallets" },
+    { "path": "./packages/kms-provider-aws" },
+    { "path": "./packages/kms-provider-gcp" }
+  ]
+}

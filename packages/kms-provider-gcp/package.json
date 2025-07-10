@@ -1,0 +1,56 @@
+{
+  "name": "@eco-foundation/eco-kms-signer/kms-provider-gcp",
+  "version": "2.0.0",
+  "description": "GCP KMS Provider for Eco KMS Signer (Based on web3-kms-signer by Jonathan Okz)",
+  "keywords": [
+    "ethereum",
+    "utilities",
+    "kms",
+    "gcp",
+    "google-cloud",
+    "provider",
+    "signer",
+    "web3",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Eco Engineering <eng@eco.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eco/eco-kms-signer.git"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@eco-foundation/eco-kms-signer/core": "workspace:*",
+    "@google-cloud/kms": "^4.2.0",
+    "fast-crc32c": "^2.0.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/fast-crc32c": "^2.0.0",
+    "@types/uuid": "^9.0.7",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
