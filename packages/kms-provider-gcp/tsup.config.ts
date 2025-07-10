@@ -2,7 +2,7 @@ import { defineConfig } from 'tsup'
 
 export default defineConfig({
   entry: ['src/index.ts'],
-  format: ['esm'],
+  format: ['cjs', 'esm'],
   dts: true,
   splitting: false,
   sourcemap: true,
@@ -10,7 +10,7 @@ export default defineConfig({
   target: 'es2022',
   outDir: 'dist',
   external: [
-    '@eco-foundation/eco-kms-signer/core',
+    '@eco-foundation/eco-kms-signer-core',
     '@google-cloud/kms',
     'fast-crc32c',
     'uuid',

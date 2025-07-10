@@ -1,5 +1,5 @@
 {
-  "name": "@eco-foundation/eco-kms-signer/hd-wallets",
+  "name": "@eco-foundation/eco-kms-signer-hd-wallets",
   "version": "2.0.0",
   "description": "HD Wallets implementation for Eco KMS Signer (Based on web3-kms-signer by Jonathan Okz)",
   "keywords": [
@@ -17,14 +17,14 @@
     "type": "git",
     "url": "https://github.com/eco/eco-kms-signer.git"
   },
-  "type": "module",
   "main": "./dist/index.js",
-  "module": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     }
   },
   "files": [
@@ -37,7 +37,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@eco-foundation/eco-kms-signer/core": "workspace:*",
+    "@eco-foundation/eco-kms-signer-core": "workspace:*",
     "@ethereumjs/util": "^9.0.2",
     "ethers": "^6.10.0"
   },

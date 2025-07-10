@@ -1,4 +1,4 @@
-import { KMSProvider } from '@eco-foundation/eco-kms-signer/core'
+import { KMSProvider } from '@eco-foundation/eco-kms-signer-core'
 import { KeyManagementServiceClient } from '@google-cloud/kms'
 import crypto from 'crypto'
 import crc32c from 'fast-crc32c'

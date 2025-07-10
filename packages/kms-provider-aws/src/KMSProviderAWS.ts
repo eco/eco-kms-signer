@@ -1,4 +1,4 @@
-import { KMSProvider } from '@eco-foundation/eco-kms-signer/core'
+import { KMSProvider } from '@eco-foundation/eco-kms-signer-core'
 import {
   KMSClient,
   SignCommand,

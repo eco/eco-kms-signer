@@ -17,11 +17,14 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@eco-foundation/eco-kms-signer/core': './packages/core/src',
-      '@eco-foundation/eco-kms-signer/hd-wallets': './packages/hd-wallets/src',
-      '@eco-foundation/eco-kms-signer/kms-wallets': './packages/kms-wallets/src',
-      '@eco-foundation/eco-kms-signer/kms-provider-aws': './packages/kms-provider-aws/src',
-      '@eco-foundation/eco-kms-signer/kms-provider-gcp': './packages/kms-provider-gcp/src',
+      '@eco-foundation/eco-kms-signer-core': './packages/core/src',
+      '@eco-foundation/eco-kms-signer-hd-wallets': './packages/hd-wallets/src',
+      '@eco-foundation/eco-kms-signer-kms-wallets':
+        './packages/kms-wallets/src',
+      '@eco-foundation/eco-kms-signer-kms-provider-aws':
+        './packages/kms-provider-aws/src',
+      '@eco-foundation/eco-kms-signer-kms-provider-gcp':
+        './packages/kms-provider-gcp/src',
     },
   },
 })

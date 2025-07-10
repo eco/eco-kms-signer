@@ -1,5 +1,5 @@
 import * as asn1js from 'asn1js'
-import { UPublickey } from '@eco-foundation/eco-kms-signer/core'
+import { UPublickey } from '@eco-foundation/eco-kms-signer-core'
 
 export class UPublickeyKMS extends UPublickey {
   /******************

@@ -1,6 +1,10 @@
 import { ecsign } from '@ethereumjs/util'
 import { ethers } from 'ethers'
-import { UPublickey, Wallets, ECDSASignature } from '@eco-foundation/eco-kms-signer/core'
+import {
+  UPublickey,
+  Wallets,
+  ECDSASignature,
+} from '@eco-foundation/eco-kms-signer-core'
 
 /**
  * The HDWallets class extends the abstract Wallets class, providing a concrete implementation

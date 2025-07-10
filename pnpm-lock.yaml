@@ -74,7 +74,7 @@ importers:
 
   packages/hd-wallets:
     dependencies:
-      '@eco-foundation/eco-kms-signer/core':
+      '@eco-foundation/eco-kms-signer-core':
         specifier: workspace:*
         version: link:../core
       '@ethereumjs/util':
@@ -96,7 +96,7 @@ importers:
       '@aws-sdk/client-kms':
         specifier: ^3.490.0
         version: 3.844.0
-      '@eco-foundation/eco-kms-signer/core':
+      '@eco-foundation/eco-kms-signer-core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -109,7 +109,7 @@ importers:
 
   packages/kms-provider-gcp:
     dependencies:
-      '@eco-foundation/eco-kms-signer/core':
+      '@eco-foundation/eco-kms-signer-core':
         specifier: workspace:*
         version: link:../core
       '@google-cloud/kms':
@@ -137,7 +137,7 @@ importers:
 
   packages/kms-wallets:
     dependencies:
-      '@eco-foundation/eco-kms-signer/core':
+      '@eco-foundation/eco-kms-signer-core':
         specifier: workspace:*
         version: link:../core
       asn1js:

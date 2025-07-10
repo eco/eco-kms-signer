@@ -2,7 +2,7 @@
   "name": "@eco-foundation/eco-kms-signer",
   "version": "0.0.1",
   "private": true,
-  "description": "Modern Eco KMS Signer Library - (Based on web3-kms-signer by Jonathan Okz)",
+  "description": "Modern Eco KMS Signer Library",
   "license": "MIT",
   "author": "Eco Engineering <eng@eco.com>",
   "repository": {
